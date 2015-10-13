@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <title>Socket.IO Chat by Nacho</title>
+        <link rel="stylesheet" href="socketstyle.css">
+
+    </head>
+    <body>
+
+
+    <div class="modal fade" id="myModal" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Select Username</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input id="username" type="text" placeholder="Insert Username" required/>
+                        <button id="connect-button" type="submit" class="btn btn-primary">Enter CHAT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul id="messages"></ul>
+    <form id="chat-form" action="">
+        <input id="m"  autocomplete="off" /><button id="send-msg-button" class="btn btn-default">Send</button>
+    </form>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="chatClient.js"></script>
+
+    </body>
+</html>

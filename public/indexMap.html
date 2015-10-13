@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+        <link rel="stylesheet" href="mapStyle.css" />
+        <title>Socket Map</title>
+    </head>
+    <body>
+
+        <div class="modal fade" id="myModal" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form action="">
+                            <input id="username" type="text" placeholder="Insert Username" required/>
+                            <button id="connect-button" type="submit" class="btn btn-primary">Enter MAP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="map"></div>
+
+
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="mapCode.js"></script>
+    </body>
+</html>
